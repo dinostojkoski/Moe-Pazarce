@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moe Pazarce</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small-nav">
+    <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">HOME</a>
+        <a href="#menu" class="w3-bar-item w3-button w3-hide-small">MENU</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
+        <a href="#myMap" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+
+        <a href="index-en.html" class="w3-bar-item w3-button flag">
+            <img src="img/united-kingdom.png" alt="">
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button flag">
+            <img src="img/republic-of-macedonia.png" alt="">
+        </a>
+    </div>
+
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-padding">
+        <span class="w3-tag w3-xlarge">Open from 08:00 to 22:00</span>
+    </div>
+    <div class="w3-display-middle w3-center blur-bg">
+        <span class="w3-text-white w3-hide-small" style="font-size:100px">welcome to<br>MOE PAZARCE</span>
+        <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>welcome to<br>MOE PAZARCE</b></span>
+        <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+    </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+    <div class="w3-content">
+
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Smoothies');" id="myLink">
+                <div class="w3-col s4 tablink w3-padding-large custom-green">Smoothies</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Juices');">
+                <div class="w3-col s4 tablink w3-padding-large custom-green">Juices</div>
+            </a>
+        </div>
+
+        <div id="Smoothies" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Bounty</b><span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+            <p class="w3-text-grey">Coconut flakes, coconut milk, banana, dates, oats</p>
+            <hr>
+
+            <h1><b>Snickers</b><span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+            <p class="w3-text-grey">Oats, cocoa, banana, hazelnuts, peanut butter, protein, milk</p>
+            <hr>
+
+            <h1><b>Oreo</b><span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+            <p class="w3-text-grey">Oreos (ground), cocoa, chocolate, vanilla, honey, milk</p>
+            <hr>
+
+            <h1><b>Red Berries</b><span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+            <p class="w3-text-grey">Raspberry, blackberry, mango, banana, pomegranate, squeezed tangerine</p>
+            <hr>
+
+            <h1><b>Green Smoothie</b><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+            <p class="w3-text-grey">Flaxseed, banana, kiwi, spinach, green apple</p>
+            <hr>
+
+            <h1><b>Chocolate Mousse</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Milk, cocoa, avocado, protein, chia seeds, honey</p>
+            <hr>
+
+            <h1><b>Milkshake</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Banana, milk, raspberry/blackberry/strawberry</p>
+            <hr>
+
+            <h1><b>Berry Madness</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Banana, forest fruit, squeezed orange, pineapple</p>
+            <hr>
+
+            <h1><b>Forever young</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Banana, oats, flaxseed, dates, peanut butter, milk</p>
+            <hr>
+
+            <h1><b>Moe Pazarce</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Banana, blueberry, pineapple, choke-berry, raspberry, protein, squeezed orange</p>
+            <hr>
+
+            <h1><b>Low Kcal Probiotic</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Avocado, banana, mango, yogurt, chia seeds</p>
+            <hr>
+
+            <h1><b>Morning Mood</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Mango, banana, pear, tangerine, orange</p>
+            <hr>
+
+            <h1><b>Energy Bomb</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Chia seeds, flax seeds, nuts, dried apricots, raisins, banana, yogurt</p>
+            <hr>
+
+            <h1><b>Chuck Norris</b> <span class="w3-tag w3-grey w3-round">New</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Banana, protein, forest fruit, milk</p>
+            <hr>
+
+            <h1><b>Chocolate Dream</b> <span class="w3-tag w3-grey w3-round">New</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Banana, avocado, cocoa, dates, coconut milk</p>
+        </div>
+
+        <div id="Juices" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Citrus</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+            <p class="w3-text-grey">Orange, tangerine, lemon, citron</p>
+            <hr>
+
+            <h1><b>Detox C</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+            <p class="w3-text-grey">Celery sticks, lemon, green apple, spinach, cucumber, ginger</p>
+            <hr>
+
+            <h1><b>Good Mood</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+            <p class="w3-text-grey">Tangerine, apple, pomegranate, orange, kiwi</p>
+            <hr>
+
+            <h1><b>Mint</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Mint leaves, green apple, orange, lime</p>
+            <hr>
+
+            <h1><b>Doctor Away</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Pomegranate, apple, orange, ginger</p>
+            <hr>
+
+            <h1><b>Orange Juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Freshly squeezed oranges</p>
+            <hr>
+
+            <h1><b>Vitamin Bomb</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Orange, lemon, apple, beetroot, carrot, ginger</p>
+            <hr>
+
+            <h1><b>Vitamin C</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Orange, pineapple, kiwi, apple, carrot</p>
+            <hr>
+
+            <h1><b>Zumba Juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Citron, celery, lemon, apple, beetroot</p>
+            <hr>
+
+            <h1><b>Red Cheek</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Pineapple, strawberry, blueberry, raspberry, orange</p>
+            <hr>
+
+            <h1><b>Pear Juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Pear, pineapple, tangerine, lime, apple</p>
+            <hr>
+
+            <h1><b>Squeezed Orange and Lemon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Freshly squeezed oranges and lemons</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 about-bg w3-xlarge" id="about">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+        <p>Welcome to Moe Pazarce, your neighborhood destination for fresh fruits, crisp vegetables, and nutritious shakes!</p>
+
+        <p>
+            Moe Pazarce was founded in 2019 by Dimitar Samardzioski in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <p><strong>The Owner?</strong> Mr. Dimitar Samardzioski<img src="img/owner.jpeg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+
+        <p>We are proud of our shop.</p>
+        <img src="img/outside.png" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="shop">
+
+        <h1><b>Opening Hours</b></h1>
+
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <p>Monday 8:00 - 22:00</p>
+                <p>Tuesday 8:00 - 22:00</p>
+                <p>Wednesday 8:00 - 22:00</p>
+                <p>Thursday 8:00 - 22:00</p>
+            </div>
+            <div class="w3-col s6">
+                <p>Friday 8:00 - 22:00</p>
+                <p>Saturday 8:00 - 22:00</p>
+                <p>Sunday CLOSED</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="myMap">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+        <p>You can find us at Bul. Goce Delchev, Prilep, Republic of Macedonia, 7500 or call us at 05050515-122330</p>
+        <p>
+            <span class="w3-tag">FYI!</span> This is our service area: Prilep · Bitola · Krivogastani · Varos
+        </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.3842224339496!2d21.54648757557578!3d41.344001698685894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1356eb671dc9a27f%3A0x10e5f2abf0de40a0!2z0JzQvtC1INC_0LDQt9Cw0YDRh9C1!5e0!3m2!1sen!2smk!4v1710274109006!5m2!1sen!2smk" width="100%" height="450" style="border:0; border-radius: 5px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p>&copy; 2024 Moe Pazarce. All rights reserved.</p>
+</footer>
+
+<script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+        let i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" custom-green", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " custom-green";
+    }
+    document.getElementById("myLink").click();
+
+</script>
+
+</body>
+</html>

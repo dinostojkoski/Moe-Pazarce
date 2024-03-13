@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Мое Пазарче</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small-nav">
+    <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">ДОМА</a>
+        <a href="#menu" class="w3-bar-item w3-button w3-hide-small">МЕНИ</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small">ЗА НАС</a>
+        <a href="#myMap" class="w3-bar-item w3-button w3-hide-small">КОНТАКТ</a>
+
+        <a href="index-en.html" class="w3-bar-item w3-button flag">
+            <img src="img/united-kingdom.png" alt="">
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button flag">
+            <img src="img/republic-of-macedonia.png" alt="">
+        </a>
+    </div>
+
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-padding">
+        <span class="w3-tag w3-xlarge">Отворено од 08:00 до 22:00 часот</span>
+    </div>
+    <div class="w3-display-middle w3-center blur-bg">
+        <span class="w3-text-white w3-hide-small" style="font-size:100px">Добредојдовте во<br>МОЕ ПАЗАРЧЕ</span>
+        <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Добредојдовте во<br>МОЕ ПАЗАРЧЕ</b></span>
+        <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Види го менито</a></p>
+    </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+    <div class="w3-content">
+
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">МЕНИ</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Smoothies');" id="myLink">
+                <div class="w3-col s4 tablink w3-padding-large">Smoothies</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Juices');">
+                <div class="w3-col s4 tablink w3-padding-large ">Juices</div>
+            </a>
+        </div>
+
+        <div id="Smoothies" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Bounty</b><span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+            <p class="w3-text-grey">Кокосови снегулки, кокосово млеко, банана, урми, овесни снегулки</p>
+            <hr>
+
+            <h1><b>Snickers</b><span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+            <p class="w3-text-grey">Овесни снегулки, какао, банана, лешници, путер од кикиритки, протеин, млеко</p>
+            <hr>
+
+            <h1><b>Oreo</b><span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+            <p class="w3-text-grey">Орео (мелени), какао, чоколадо, ванила, мед, млеко</p>
+            <hr>
+
+            <h1><b>Red Berries</b><span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+            <p class="w3-text-grey">Малина, капина, манго, банана, калинка, цедена мандарина</p>
+            <hr>
+
+            <h1><b>Green Smoothie</b><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+            <p class="w3-text-grey">Ленено семе, банана, киви, спанаќ, зелено јаболко</p>
+            <hr>
+
+            <h1><b>Chocolate Mousse</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Млеко, какао, авокадо, протеин, чиа семе, мед</p>
+            <hr>
+
+            <h1><b>Milkshake</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Банана, млеко, малина/капина/јагода</p>
+            <hr>
+
+            <h1><b>Berry Madness</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Банана, шумско овошје, цеден портокал, ананас</p>
+            <hr>
+
+            <h1><b>Forever young</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Банана, овесни снегулки, ленено семе, урми, путер од кикиритки, млеко</p>
+            <hr>
+
+            <h1><b>Moe Pazarce</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Банана, боровинка, ананас, аронија, малина, протеин, цеден портокал</p>
+            <hr>
+
+            <h1><b>Low Kcal Probiotic</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Авокадо, банана, манго, јогурт, чиа семе</p>
+            <hr>
+
+            <h1><b>Morning Mood</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Манго, банана, круша, мандарина, портокал</p>
+            <hr>
+
+            <h1><b>Energy Bomb</b><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Чиа семе, ленено семе, јаткасти, сушена кајсија, суво грозје, банана, јогурт</p>
+            <hr>
+
+            <h1><b>Chuck Norris</b> <span class="w3-tag w3-grey w3-round">New</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Банана, протеин, шумско овошје, млеко</p>
+            <hr>
+
+            <h1><b>Chocolate Dream</b> <span class="w3-tag w3-grey w3-round">New</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+            <p class="w3-text-grey">Банана, авокадо, какао, урми, кокосово млеко</p>
+        </div>
+
+        <div id="Juices" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Citrus</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+            <p class="w3-text-grey">Портокал, мандарина, лимон, цитрон</p>
+            <hr>
+
+            <h1><b>Detox C</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+            <p class="w3-text-grey">Целер стапчиња, лимон, зелено јаболко, спанаќ, краставица, ѓумбир</p>
+            <hr>
+
+            <h1><b>Good Mood</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+            <p class="w3-text-grey">Мандарина, јаболко, калинка, портокал, киви</p>
+            <hr>
+
+            <h1><b>Mint</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Листови нане, зелено јаболко, портокал, лимета</p>
+            <hr>
+
+            <h1><b>Doctor Away</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Калинка, јаболко, портокал, ѓумбир</p>
+            <hr>
+
+            <h1><b>Orange Juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Свежо цедени портокали</p>
+            <hr>
+
+            <h1><b>Vitamin Bomb</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Портокал, лимон, јаболко, цвекло, морков, ѓумбир</p>
+            <hr>
+
+            <h1><b>Vitamin C</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Портокал, ананас, киви, јаболко, морков</p>
+            <hr>
+
+            <h1><b>Zumba Juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Цитрон, целер, лимон, јаболко, цвекло</p>
+            <hr>
+
+            <h1><b>Red Cheek</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Ананас, јагода, боровинка, малина, портокал</p>
+            <hr>
+
+            <h1><b>Pear Juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Круша, ананас, мандарина, лимета, јаболко</p>
+            <hr>
+
+            <h1><b>Squeezed Orange and Lemon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+            <p class="w3-text-grey">Свежо цедени портокали и лимони</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 about-bg w3-xlarge" id="about">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">ЗА НАС</h1>
+        <p>Добредојдовте во Мое Пазарче, вашата маалска дестинација за свежо овошје, вкусен зеленчук и хранливи шејкови!</p>
+
+        <p>
+            Мое Пазарче е основано во 2019 година од Димитар Самарџиоски in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <p><strong>Сопственик?</strong> г. Димитар Самарџиоски<img src="img/owner.jpeg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+
+        <p>Ние сме горди со нашата продавница.</p>
+        <img src="img/outside.png" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="shop">
+
+        <h1><b>Работно Време</b></h1>
+
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <p>Понеделник 8:00 - 22:00</p>
+                <p>Вторник 8:00 - 22:00</p>
+                <p>Среда 8:00 - 22:00</p>
+                <p>Четврток 8:00 - 22:00</p>
+            </div>
+            <div class="w3-col s6">
+                <p>Петок 8:00 - 22:00</p>
+                <p>Сабота 8:00 - 22:00</p>
+                <p>Недела ЗАТВОРЕНО</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="myMap">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">КОНТАКТ</h1>
+        <p>Можете да не најдете на Бул. Гоце Делчев, Прилеп, Република Македонија, 7500 или јавете ни се на 05050515-122330</p>
+        <p>
+            <span class="w3-tag">FYI!</span> Ова е нашиот сервисен простор: Прилеп · Битола · Кривогаштани · Варош
+        </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.3842224339496!2d21.54648757557578!3d41.344001698685894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1356eb671dc9a27f%3A0x10e5f2abf0de40a0!2z0JzQvtC1INC_0LDQt9Cw0YDRh9C1!5e0!3m2!1sen!2smk!4v1710274109006!5m2!1sen!2smk" width="100%" height="450" style="border:0; border-radius: 5px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p>&copy; 2024 Moe Pazarce. All rights reserved.</p>
+</footer>
+
+<script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+        let i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" custom-green", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " custom-green";
+    }
+    document.getElementById("myLink").click();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+body, html {
+    height: 100%
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Amatic SC", sans-serif
+}
+.menu {
+    display: none
+}
+
+.w3-button {
+    transition: 0.4s ease;
+}
+
+.w3-bar {
+    transition: 0.3s ease;
+}
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/background4.jpg");
+    min-height: 90%;
+}
+
+.blur-bg {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 0 2%;
+}
+
+.w3-col.s4 {
+    width: 50%;
+}
+
+#about p {
+    text-align: justify;
+}
+
+.about-bg {
+    color: white;
+    background-color: #618264;
+    filter: grayscale(40%);
+}
+
+.custom-green {
+    background-color: #618264;
+    transition: 0.3s ease;
+}
+
+.green-hover {
+    background-color: #618264;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .w3-hide-small-nav {
+        display: block !important;
+    }
+}
